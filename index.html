@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Xem Phim Hoạt Hình</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Anime Hub</h1>
+    </header>
+
+    <main>
+        <section class="video-player">
+            <video id="videoPlayer" controls>
+                <source src="videos/phim1.mp4" type="video/mp4">
+                <source src="videos/phim1.webm" type="video/webm">
+                <source src="videos/phim1.ogg" type="video/ogg">
+                Trình duyệt của bạn không hỗ trợ video.
+            </video>
+        </section>
+
+        <section class="video-list">
+            <h2>Danh sách phim</h2>
+            <ul>
+                <li onclick="changeVideo('phim1')">Phim 1</li>
+                <li onclick="changeVideo('phim2')">Phim 2</li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
